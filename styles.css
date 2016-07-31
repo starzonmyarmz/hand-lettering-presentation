@@ -8,6 +8,9 @@ html, body {
 
 body {
   color: #333;
+  font-family: "Source Sans Pro", HelveticaNeue, Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
   line-height: 1.5;
   margin: 0;
 }
@@ -17,10 +20,22 @@ section {
   -ms-flex-align: center;
   -ms-grid-row-align: center;
   align-items: center;
-  background: red;
   display: none;
   min-height: 100%;
-  padding: 10%;
+  padding: 0 10%;
+}
+
+section > div {
+  display: block;
+  width: 100%;
+}
+
+section > div > :first-child {
+  margin-top: 0;
+}
+
+section > div > :last-child {
+  margin-bottom: 0;
 }
 
 .slide-current {
@@ -30,7 +45,41 @@ section {
 }
 
 h2 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
   text-align: center;
+}
+
+li {
+  margin: 1.5rem 0;
+}
+
+.actions {
+  bottom: 0;
+  font-size: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.actions button {
+  background: transparent;
+  border: 0;
+  color: transparent;
+  display: inline-block;
+  height: 100%;
+  outline: 0;
+  width: 50%;
+}
+
+
+.title {
+  background: url("/images/title-v2.png") 50% 50% no-repeat;
+}
+
+.cheating {
+  background: url("/images/cheating-karla-font.png") 50% 50% no-repeat;
 }
 
 .artwork {
@@ -56,21 +105,13 @@ h2 {
   width: 100%;
 }
 
-.actions {
-  bottom: 0;
-  font-size: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
+.end {
+  background: #f9f9f9 url("/images/the-end.png") 50% 50% no-repeat;
 }
 
-.actions button {
-  background: transparent;
-  border: 0;
+
+
+.image {
+  background-size: cover;
   color: transparent;
-  display: inline-block;
-  height: 100%;
-  outline: 0;
-  width: 50%;
 }
