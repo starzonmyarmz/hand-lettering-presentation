@@ -78,6 +78,10 @@ li {
   background: url("/images/title-v2.png") 50% 50% no-repeat;
 }
 
+.process {
+  background: url("/images/process.png") 50% 50% no-repeat;
+}
+
 .cheating {
   background: url("/images/cheating-karla-font.png") 50% 50% no-repeat;
 }
