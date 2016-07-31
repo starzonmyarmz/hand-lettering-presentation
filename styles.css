@@ -1,4 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
 body {
   color: #333;
   line-height: 1.5;
+  margin: 0;
+}
+
+section {
+  align-items: center;
+  background: red;
+  display: none;
+  min-height: 100%;
+  padding: 10%;
+}
+
+.slide-current {
+  display: flex;
+}
+
+h2 {
+  text-align: center;
+}
+
+.actions {
+  bottom: 0;
+  font-size: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.actions button {
+  background: transparent;
+  border: 0;
+  color: transparent;
+  display: inline-block;
+  height: 100%;
+  outline: 0;
+  width: 50%;
 }
