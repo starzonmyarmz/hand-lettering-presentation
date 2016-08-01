@@ -70,9 +70,43 @@ li {
   display: inline-block;
   height: 100%;
   outline: 0;
+  padding: 0;
+  position: relative;
   width: 50%;
 }
 
+.actions button:active {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.actions button:first-child:active:after {
+  border-top: 15px solid rgba(255, 255, 255, 0.25);
+  border-right: 15px solid rgba(255, 255, 255, 0.25);
+  content: "";
+  display: block;
+  height: 25vw;
+  left: 50%;
+  margin: -12.5vw 0 0 -6vw;
+  position: absolute;
+  top: 50%;
+  transform: rotate(-135deg);
+  width: 25vw;
+}
+
+.actions button:last-child:active:after {
+  border-top: 15px solid rgba(255, 255, 255, 0.25);
+  border-right: 15px solid rgba(255, 255, 255, 0.25);
+  content: "";
+  display: block;
+  height: 25vw;
+  left: 50%;
+  margin: -12.5vw 0 0 -20vw;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+  width: 25vw;
+}
 
 .title {
   background: url("images/title.png") 50% 50% no-repeat;
